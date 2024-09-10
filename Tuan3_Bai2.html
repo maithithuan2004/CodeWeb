@@ -17,7 +17,6 @@
             width: 960px;
             height: 700px;
             box-sizing: border-box;
-            background-color: antiquewhite;
         }
         
         header {
@@ -86,7 +85,6 @@
         .content {
             height: 450px;
             width: 960px;
-            background-color: wheat;
         }
         
         footer {
@@ -108,7 +106,6 @@
             width: 65%;
             height: 100%;
             float: left;
-            background-color: thistle;
         }
         
         aside {
@@ -136,26 +133,46 @@
         #phan1 {
             width: 350px;
             float: left;
+            padding-left: 10px;
+            padding-top: 20px;
         }
         
         #phan1 p {
             color: tomato;
-            padding-left: 10px;
-            padding-top: 20px;
             text-shadow: 5px 5px 2px tomato;
+            padding-left: 10px;
+        }
+        #phan1 input {
+            width: 150px;
+        }
+        #phan1 #frm2 {
+            padding-top: 30px;
+        }
+        #phan1 table {
+            padding-top: 20px;
+        }
+
+        #phan1 textarea {
+            width: 300px;
+            height: 100px;
         }
         
         #phan2 {
             width: 250px;
             float: left;
             padding-left: 20px;
-            padding-top: 20px;
         }
         
         #phan2 p {
             padding-top: 10px;
             padding-bottom: 10px;
         }
+        h2 {
+            padding-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px dotted #f3b611;
+        }
+
     </style>
 </head>
 
@@ -166,8 +183,8 @@
             <h1> FlowerBox 360 </h1>
             <p class="ph">...to get your daily close of luxury roses!</p>
             <form action="" method="get" id="frm1">
-                <input type="search" name="txtS" placeholder="Flowers Services" style="color: aliceblue;">
-                <button type="submit" style="color: aliceblue;">GO</button>
+                <input type="search" name="txtS" placeholder="Flowers Services" >
+                <button type="submit"  >GO</button>
             </form>
             <nav>
                 <ul class="menu">
@@ -182,31 +199,44 @@
         <div class="content">
             <section>
                 <h2>Why Not Contact Us Today!</h2>
-                <hr>
                 <div class="noidung">
                     <article id="phan1">
                         <p>For FlowerBox 360 shopers, that means not only can you send your friends and loves ones the highest quality flowers found on online, but thatt you can do so at a great value.</p>
-                        <form action="">
-                            <label for="">Name</label>
-                            <input type="text" style="width: 100px;">
-                            <label for="">Email</label>
-                            <input type="text" style="width: 100px;">
-                            <br>
-                            <label for="">Telephone</label>
-                            <input type="text" style="width: 100px;">
-                            <label for="">Subjects</label>
-                            <input type="text" style="width: 100px;">
-                            <br>
-                            <label for="">Message</label>
-                            <input type="text">
-                            <br>
-                            <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
+                        <table>
+                            <form action="" id="frm2"></form>
+                            <tr>
+                                <td><label for="">Name</label></td>
+                                <td><label for="">Email</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" ></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Telephone</label></td>
+                                <td><label for="">Subjects</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" ></td>
+                                <td><input type="text" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Message</label></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea name="" id=""></textarea></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="submit">Submit</button>
+                                    <button type="reset">Reset</button>
+                                </td>
+                            </tr>
                         </form>
+                        </table>
                     </article>
                     <article id="phan2">
                         <h2> FlowerBox 360 Info!</h2>
-                        <hr>
                         <p>Openationg Hours: Monday-Friday:9:000am-5:00pm Saturday:9:00am-1.00pm. Sunday:CLosed (No Deliveries) ORDER ONLINE 24/7</p>
                         <p>
                             <p>Software Engineering Dept. Information Technology Faculty First Floor, H Building</p>
@@ -216,7 +246,6 @@
             </section>
             <aside>
                 <h2>Discounts & Special</h2>
-                <hr>
                 <img src="../IMG/rose.png" alt="" width="300px">
                 <p>FlowerBox 360 offers many great discounts throught the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderfull troppps!</p>
                 <a href="">Read more </a>
